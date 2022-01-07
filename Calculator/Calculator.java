@@ -13,22 +13,27 @@ class Calculator {
 		System.out.println("Enter the operator: ");
 		char operator = scanner.next().charAt(0);	
 
-		// Addition or Subtraction
 		int result = 0;		
 		
-		if (operator == '+')
-			result = a + b;
-		else if (operator == '-')
-			result = a - b;
-		else if (operator == '*')
-			result = a * b;
-		else if (operator == '/')
-			result = a / b;
-		else if (operator == '%')
-			result = a % b;
-		else {
-			System.out.println("Wrong Input!");
-			System.exit(1);
+		switch(operator) {
+			case '+':
+				result = a + b;
+				break;
+			case '-':
+				result = a - b;
+				break;
+			case '*':
+				result = a * b;
+				break;
+			case '/':
+				result = a / b;
+				break;
+			case '%':
+				result = a % b;
+				break;
+			default: 
+				System.out.println("Wrong Input!");
+				System.exit(1);
 		}
 			
 		System.out.println("Result = " + result);	

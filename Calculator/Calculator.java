@@ -18,15 +18,19 @@ class Calculator {
 		
 		if (operator == '+')
 			result = a + b;
-		if (operator == '-')
+		else if (operator == '-')
 			result = a - b;
-		if (operator == '*')
+		else if (operator == '*')
 			result = a * b;
-		if (operator == '/')
+		else if (operator == '/')
 			result = a / b;
-		if (operator == '%')
+		else if (operator == '%')
 			result = a % b;
-
+		else {
+			System.out.println("Wrong Input!");
+			System.exit(1);
+		}
+			
 		System.out.println("Result = " + result);	
 
 	}

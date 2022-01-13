@@ -4,7 +4,7 @@ class Calculator {
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
 		
-		do {
+		for (;;) {
 			System.out.print("Enter a number: ");
 			int a = scanner.nextInt();
 
@@ -43,6 +43,6 @@ class Calculator {
 			if (response == 'n')
 				break;
 
-		} while(true);
+		}
 	}
 }
